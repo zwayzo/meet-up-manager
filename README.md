@@ -13,20 +13,8 @@ Application de réservation de salles de réunion développée avec Laravel 12.
 git clone https://github.com/zwayzo/meet-up-manager.git
 cd meet-up-manager-v11
 
-### 2. Installer les dépendances
-composer install
+### RUN SCRIPT 
+./setup.sh
 
-### 3. Configurer l'environnement
-cp .env.example .env
-php artisan key:generate
-
-### 4. Créer le fichier SQLite
-touch database/database.sqlite
-
-### 5. Lancer les migrations et insérer les salles
-php artisan migrate --seed
-
-### 6. Lancer le serveur
-php artisan serve
 
 L'application est accessible sur http://localhost:8000
